@@ -1,10 +1,12 @@
 import React from 'react'
-import { Navbar } from "./components";
+import { Navbar, Sidebar, Feed } from "./components";
 
 function App() {
   return (
     <div className=''>
       <Navbar />
+      <Sidebar />
+      <Feed />
     </div>
   )
 }

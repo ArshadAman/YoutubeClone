@@ -26,10 +26,10 @@ function Navbar() {
             placeholder="Search"
           />
           <div className="search py-1 px-4 h-[75%] bg-[#f0f0f0] cursor-pointer flex items-center border-gray-400 border">
-            <i class="fas fa-lg fa-search"></i>
+            <i className="fas fa-lg fa-search"></i>
           </div>
           <div className="Vsearch py-1 px-4 flex items-center h-[80%] bg-[#f9f9f9] rounded-full ml-5 cursor-pointer">
-            <i class="fas fa-microphone"></i>
+            <i className="fas fa-microphone"></i>
           </div>
         </div>
 
@@ -43,7 +43,7 @@ function Navbar() {
             <img
               src="https://www.seekpng.com/png/full/144-1449257_youtuber-avatar.png"
               alt=""
-              className="h-[40px]"
+              className="h-[36px]"
             />
           </div>
         </div>

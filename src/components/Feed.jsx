@@ -1,6 +1,7 @@
 import React from "react";
 import './css/Feed.css';
 import Rows from "./Rows";
+import Endpoints from "../Requests";
 
 function Feed() {
   return (
@@ -58,7 +59,7 @@ function Feed() {
       </div>
 
       {/* Bunch Of Rows */}
-      <Rows />
+      <Rows fetchUrl={Endpoints.suggestedVideos} />
     </div>
   );
 }

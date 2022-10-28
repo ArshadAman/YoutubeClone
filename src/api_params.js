@@ -1,9 +1,5 @@
 const options = {
   params: {
-    //   relatedToVideoId: 'H1UKIgBSfxM',
-    //   part: 'id,snippet',
-    //   type: 'video',
-    //   maxResults: '500'
     id: "lhNNbGuh0t4",
     geo: "IN",
     lang: "en",

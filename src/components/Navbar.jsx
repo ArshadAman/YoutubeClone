@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import SearchRows from "./SearchResults";
 
 function Navbar() {
+  const [query, setQuery] = useState('');
   return (
     <div className="navbar">
       <div className="container flex justify-between pt-1 px-6 fixed top-0 left-0 right-0 z-20 bg-white">
@@ -16,23 +19,29 @@ function Navbar() {
             className="w-[120px] h-[56px] cursor-pointer"
           />
         </div>
-
         <div className="middle flex items-center">
           <input
             type="text"
             name=""
-            id=""
+            id="search-input"
             className="border-gray-400 border-l border-t border-b w-[30vw] px-3 py-2 focus:outline-blue-500 "
             placeholder="Search"
+            value={query}
+            onChange={(e)=>setQuery(e.target.value)}
           />
-          <div className="search py-1 px-4 h-[75%] bg-[#f0f0f0] cursor-pointer flex items-center border-gray-400 border">
-            <i className="fas fa-lg fa-search"></i>
-          </div>
+          <Link
+            to={`/results/${query}`}
+            className="search py-1 px-4 h-[75%] bg-[#f0f0f0] cursor-pointer flex items-center border-gray-400 border"
+            id="search-id"
+          >
+            <button className="">
+              <i className="fas fa-lg fa-search"></i>
+            </button>
+          </Link>
           <div className="Vsearch py-1 px-4 flex items-center h-[80%] bg-[#f9f9f9] rounded-full ml-5 cursor-pointer">
             <i className="fas fa-microphone"></i>
           </div>
         </div>
-
         <div className="right flex items-center">
           <button className="dots flex flex-col">
             <div className="dot h-1 w-1 bg-black rounded-full"></div>

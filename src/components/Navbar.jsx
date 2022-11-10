@@ -24,14 +24,14 @@ function Navbar() {
             type="text"
             name=""
             id="search-input"
-            className="border-gray-400 border-l border-t border-b w-[30vw] px-3 py-2 focus:outline-blue-500 "
+            className="border-gray-400 border-l border-t border-b w-[35vw] px-3 py-2 focus:outline-blue-500 rounded-l-full rounded-t-full rounded-b-full rounded-r-none"
             placeholder="Search"
             value={query}
             onChange={(e)=>setQuery(e.target.value)}
           />
           <Link
             to={`/results/${query}`}
-            className="search py-1 px-4 h-[75%] bg-[#f0f0f0] cursor-pointer flex items-center border-gray-400 border"
+            className="search py-1 px-4 h-[75%] bg-[#f0f0f0] cursor-pointer flex items-center border-gray-400 border rounded-l-none rounded-t-full rounded-b-full rounded-r-full"
             id="search-id"
           >
             <button className="">

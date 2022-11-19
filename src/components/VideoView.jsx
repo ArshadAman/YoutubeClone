@@ -42,7 +42,7 @@ function VideoView() {
   }, []);
 
   // let views = ConvertToK(video.viewCount)
-  console.log(video.viewCount)
+  console.log(video)
 
   return (
     <div className="flex justify-between items-center my-20">
@@ -78,8 +78,9 @@ function VideoView() {
           </div>
         </span>
         <span className="description">
-          <div className="desc w-full max-w-[55rem] max-h-[7rem] h-28 bg-gray-200 rounded-md text-black my-4 p-2">
-            <p className="views">{} views {video.uploadDate}</p>
+          <div className="desc w-full max-w-[55rem] amax-h-[7rem] ah-28 bg-gray-200 rounded-md text-black my-4 p-2">
+            <p className="views"><strong>{video.uploadDate}</strong></p>
+            <p className="main_desc">{video.description}</p>
           </div>
         </span>
       </div>
